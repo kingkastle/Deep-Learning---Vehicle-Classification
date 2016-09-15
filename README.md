@@ -9,12 +9,14 @@ This project is a proof of concept (POC) solution where deep learning techniques
 ## Requirements:
 
 Following libraries are necessary:
+
+```
 # local scripts:
 from scripts import configuration  # includes paths and parameters configurations
 from scripts import models # includes the different models
 from scripts import Dataset_wrangling # includes scripts from downloading pics to generate datasets
 
-```
+
 # standard libraries
 import os
 import h5py
@@ -44,7 +46,7 @@ Project is enterely written in Python 2.7.
 
 ## Instructions:
 
-Please follow the instructions described given in ```Vehicles_Categorization.ipynb```
+Please follow the instructions given in ```Vehicles_Categorization.ipynb```
 
 
 Enjoy! 
