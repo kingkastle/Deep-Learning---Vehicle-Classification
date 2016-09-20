@@ -91,6 +91,24 @@ The proposed net architecture for this particular problem is a neural net with 1
 <img src="images/neural_net.png" alt="Drawing" style="width: 800px;">
 
 
+On top of this, two different optimizers are employed: ```Adam``` and ```Adagram```. Optimizers are used to minimize the ```Cost``` function in a neural net. In the example below, we can see there are weights (W) and biases (b) for every node and connection between nodes in a neural network:
+
+<img src="images/optimizers.png" alt="Drawing" style="width: 800px;">
+
+A cost function is a measure of "how good" a neural network did with respect to it's given training sample and the expected output. It also may depend on variables such as weights and biases. A cost function is a single value, not a vector, because it rates how good the neural network did as a whole.
+
+Specifically, a cost function is of the form: 
+```
+C(W,B,S,E)
+```
+where ```W``` is our neural network's weights, ```B``` is our neural network's biases, ```S``` is the input of a single training sample, and ```E``` is the desired output of that training sample.[ref 08]
+
+While there are different ways to represent the ```Cost``` function, the goal of optimization is to minimize it. Different approaches are used, Stochastic Gradient Descent (SGD)  tries to find minimums or maximums by iteration. This is the most common approach and different versions of this method originates the optimizers here employed:
+ * **AdaGrad** (for adaptive gradient algorithm) is a modified stochastic gradient descent with per-parameter learning rate, first published in 2011. Informally, this increases the learning rate for more sparse parameters and decreases the learning rate for less sparse ones. This strategy often improves convergence performance over standard stochastic gradient descent.
+ * **Adam** is also a method in which the learning rate is adapted for each of the parameters. The idea is to divide the learning rate for a weight by a running average of their magnitudes and recent gradients for that weight.
+
+<img src="images/sgd.png" alt="Drawing" style="width: 600px;">
+
 ### Benchmark
 
 In the study: [Monza: Image Classification of Vehicle Make and Model Using Convolutional Neural Networks and Transfer Learning](http://cs231n.stanford.edu/reports/lediurfinal.pdf) several machine learning approaches are used for car detection and identification. A fine-grained dataset containing 196 different classes of cars is employed. This dataset is particularly challenging due to the freeform nature of the images, which contained cars in many different sizes, shapes, and poses, similar scenario applies to the current dataset, but in this particular case there are just two different classes. Study results are presented in terms of accuracy for the top1 and top5 classes for the different approaches used. For the Deep Learning approaches, accuracy values are around 0.8, so this will be the value used to benchmark current results.
@@ -251,5 +269,7 @@ With regards to improvements, as already mentioned, gathering additional data wo
 [ref 06]: [Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network)
 
 [ref 07]: [Monza: Image Classification of Vehicle Make and Model Using Convolutional Neural Networks and Transfer Learning](http://cs231n.stanford.edu/reports/lediurfinal.pdf)
+
+[ref 08]: [ Neilsen's book](http://neuralnetworksanddeeplearning.com/)
 
 
