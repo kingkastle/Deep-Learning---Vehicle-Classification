@@ -5,7 +5,8 @@ This project is a proof of concept (POC) solution where deep learning techniques
 
 <img src="images/truck_versus_car.png" alt="Drawing" style="width: 500px;">
 
-** COMPLETE REPORT: **[Deep Learning Vehicle Classification-Project_writeup](https://github.com/kingkastle/Deep-Learning---Vehicle-Classification/blob/master/Capstone%20Project_writeup.md)
+## COMPLETE REPORT: 
+Report with full descriptions of motivations, methodology, results, etc. [Deep Learning Vehicle Classification-Project_writeup](https://github.com/kingkastle/Deep-Learning---Vehicle-Classification/blob/master/Capstone%20Project_writeup.md)
 
 
 ## Requirements:
